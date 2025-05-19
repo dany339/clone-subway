@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>SUBWAY 써브웨이</title>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="website" property="og:type" />
+    <meta content="SUBWAY KOREA" property="og:title" />
+    <meta
+      content="https://github.com/dany339/clone-subway.git"
+      property="og:url"
+    />
+    <meta
+      content="https://github.com/dany339/images/common/subway_og.png"
+      property="og:image"
+    />
+    <meta content="image/png" property="og:image:type" />
+    <meta content="570" property="og:image:type" />
+    <meta content="400" property="og:image:height" />
+    <meta
+      content="신선하고 건강한 글로벌 NO.1 샌드위치 브랜드, 써브웨이"
+      property="og:description"
+    />
+    <meta
+      content="신선하고 건강한 글로벌 NO.1 샌드위치 브랜드, 써브웨이"
+      name="description"
+    />
+    <link
+      rel="stylesheet"
+      type="image/x-icon"
+      href="./images/common/subway_favicon.ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <script
+      type="text/javascript"
+      src="/js/jQuery/jquery.mCustomScrollbar.concat.min.js"
+    ></script>
+    <script type="text/javascript" src="/js/common.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header s -->
+      <div id="header">
+        <div class="content">
+          <h1 class="logo"><a href="/">SUBWAY</a></h1>
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="#none" class="dp1">메뉴소개</a>
+                <div class="dp2">
+                  <ul>
+                    <li><a href="">샌드위치</a></li>
+                    <li><a href="">랩ㆍ기타</a></li>
+                    <li><a href="">샐러드</a></li>
+                    <li><a href="">아침메뉴</a></li>
+                    <li><a href="">스마일 썹</a></li>
+                    <li><a href="">단체메뉴</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#none" class="dp1">이용방법</a>
+                <div class="dp2">
+                  <ul>
+                    <li><a href="">써브웨이 이용방법</a></li>
+                    <li><a href="">단체메뉴 이용방법</a></li>
+                    <li><a href="">신선한 재료 소개</a></li>
+                    <li><a href="">App 이용방법</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#none" class="dp1">새소식</a>
+                <div class="dp2">
+                  <ul>
+                    <li><a href="">이벤트ㆍ프로모션</a></li>
+                    <li><a href="">뉴스ㆍ공지사항</a></li>
+                    <li><a href="">광고영상</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#none" class="dp1">써브웨이</a>
+                <div class="dp2">
+                  <ul>
+                    <li><a href="">써브웨이 역사</a></li>
+                    <li><a href="">써브웨이 약속</a></li>
+                    <li><a href="">샌드위치 아티스트 지원</a></li>
+                    <li><a href="">매장찾기</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#none" class="dp1">가맹점</a>
+                <div class="dp2">
+                  <ul>
+                    <li><a href="">써브웨이 프랜차이즈</a></li>
+                    <li><a href="">가맹관련 FAQ</a></li>
+                    <li><a href="">가맹신청ㆍ문의</a></li>
+                    <li><a href="">지사안내</a></li>
+                    <li><a href="">사업설명회</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#none" class="dp1">온라인 주문</a>
+                <div class="dp2">
+                  <ul>
+                    <li><a href="">FAST-SUB</a></li>
+                    <li><a href="">HOME-SUB</a></li>
+                    <li><a href="">단체주문</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="util_menu">
+            <ul>
+              <li class="before_sign"><a href="">로그인</a></li>
+              <li class="before_sign"><a href="">회원가입</a></li>
+              <li
+                class="icon_menu global_subway"
+                target="_blank"
+                title="Global Subway"
+              >
+                <a href=""><span class="blind">Global Subway</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- header e -->
+
+      <!-- container s -->
+      <div id="container">
+        <div
+          class="sub_header fixed"
+          style="position: fixed; background-color: rgb(255, 255, 255)"
+        >
+          <div class="content">
+            <a class="logo" href="/" style="opacity: 0">HOME</a>
+            <!-- sub location -->
+            <div class="sub_loc">
+              <ul>
+                <li class="active"><a href="">써브웨이 역사</a></li>
+                <li><a href="">써브웨이 약속</a></li>
+                <li><a href="">샌드위치 아티스트 지원</a></li>
+                <li><a href="">매장찾기</a></li>
+              </ul>
+            </div>
+            <!-- // sub location -->
+            <a class="top" href="#none" style="opacity: 0">TOP</a>
+          </div>
+        </div>
+        <!-- sub content s -->
+        <div id="content">
+          <!-- 매장찾기 s -->
+          <div class="store_search_wrapper">
+            <!-- 매장찾기 레이어 s -->
+            <div class="store_search_layer">
+              <h2>매장찾기</h2>
+              <div class="form_search">
+                <form
+                  method="POST"
+                  name="mapFrm"
+                  onsubmit="return shopMap.search()"
+                  id="mapFrm"
+                >
+                  <input
+                    type="text"
+                    maxlength="30"
+                    placeholder="지역 또는 매장명 입력"
+                    id="keyword"
+                  />
+                  <a
+                    href="#"
+                    onclick="shopMap.search(); return false;"
+                    class="btn_search"
+                  ></a>
+                </form>
+              </div>
+              <ul class="search_noti">
+                <li>* 운영시간은 매장 사정에 따라 변경될 수 있습니다.</li>
+              </ul>
+              <div
+                class="search_result_cont"
+                id="uiReslutCont"
+                style="display: none"
+              >
+                <p class="search_total">
+                  검색 결과 <strong id="uiResultCount">0</strong>건
+                </p>
+                <div
+                  class="store_list_scroll mCustomScrollbar _mCS_no_scrollbar"
+                >
+                  <div
+                    id="mCSB"
+                    class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+                    style="max-height: 421px"
+                    tabindex="0"
+                  >
+                    <div
+                      class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                      id="mCSB_1_container"
+                      style="position: relative; top: 0; left: 0"
+                      dir="ltr"
+                    >
+                      <ul id="uiResultList"></ul>
+                    </div>
+                    <div
+                      class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"
+                      id="mCSB_1_scrollbar_vertical"
+                      style="display: none"
+                    >
+                      <div class="mCSB_draggerContainer">
+                        <div
+                          class="mCSB_dragger"
+                          id="mCSB_1_dragger_vertical"
+                          style="position: absolute; min-height: 30px; top: 0"
+                        >
+                          <div
+                            class="mCSB_dragger_bar"
+                            style="line-height: 30px"
+                          ></div>
+                        </div>
+                        <div class="mCSB_draggerRail"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination" id="ui_pager"></div>
+              </div>
+            </div>
+            <!-- // 매장찾기 레이어 e -->
+            <!-- 매장지도 s -->
+            <div class="store_map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d405472.7549104693!2d127.01036321779551!3d37.4428709404824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1747640233864!5m2!1sko!2skr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <!-- // 매장지도 e -->
+          </div>
+          <!-- 매장찾기 e -->
+          <!-- 전체매장 s -->
+          <div class="all_store_content" id="storeList">
+            <div class="content">
+              <h3 class="h_title">전체매장</h3>
+              <div class="board_list_wrapper">
+                <div class="content">
+                  <p class="board_total">
+                    총<strong id="pageCount">2</strong>개의 매장이 있습니다.
+                  </p>
+                  <form id="searchFrm" method="GET" name="searchFrm">
+                    <input type="hidden" value="1" name="page" id="page" />
+                    <div class="cont_right">
+                      <div class="form_select">
+                        <select name="rgn1Nm" id="rgn1Nm">
+                          <option value="">시/도</option>
+                          <option value="서울특별시">서울특별시</option>
+                          <option value="경기도">경기도</option>
+                          <option value="인천광역시">인천광역시</option>
+                          <option value="대전광역시">대전광역시</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                  <table>
+                    <caption>
+                      전체매장 목록 테이블
+                    </caption>
+                    <colgroup>
+                      <col width="100px" />
+                      <col width="185px" />
+                      <col width="*" />
+                      <col width="250px" />
+                      <col width="170px" />
+                      <col width="55px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">매장명</th>
+                        <th scope="col">매장주소</th>
+                        <th scope="col">주요서비스</th>
+                        <th scope="col">연락처</th>
+                        <th class="hide" scope="col">자세히보기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="num">3</div>
+                        </td>
+                        <td><a href=""></a>네모세모</td>
+                        <td>
+                          <div class="title">울산광역시 네모구 땡땡1길 23</div>
+                        </td>
+                        <td>
+                          <div class="service">
+                            <span class="on">아침메뉴</span><span>24시간</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="coming">Coming Soon</div>
+                        </td>
+                        <td>
+                          <div>
+                            <a href=""
+                              ><img
+                                src="./images/common/icon_detail_view.png"
+                                alt="자세히보기"
+                            /></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="num">2</div>
+                        </td>
+                        <td><a href="">땡땡구청역</a></td>
+                        <td>
+                          <div class="title">서울시 네모구 세모로로</div>
+                        </td>
+                        <td>
+                          <div class="service">
+                            <span class="on">아침메뉴</span
+                            ><span class="on">24시간</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="coming">Coming Soon</div>
+                        </td>
+                        <td>
+                          <div>
+                            <a href=""
+                              ><img
+                                src="./images/common/icon_detail_view.png"
+                                alt="자세히보기"
+                            /></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="num">1</div>
+                        </td>
+                        <td><a href="">땡땡중앙</a></td>
+                        <td>
+                          <div class="title">경기도 땡땡시 땡땡로</div>
+                        </td>
+                        <td>
+                          <div class="service">
+                            <span class="on">아침메뉴</span><span>24시간</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="coming">Coming Soon</div>
+                        </td>
+                        <td>
+                          <div>
+                            <a href=""
+                              ><img
+                                src="./images/common/icon_detail_view.png"
+                                alt="자세히보기"
+                            /></a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <div class="pagination">
+                    <a href="" class="arr prev"></a>
+                    <a href="#" class="active">1</a>
+                    <a href="#" onclick="paging.page(2); return false;">2</a>
+                    <a href="" class="arr next"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 전체매장 e -->
+        </div>
+        <!-- sub content e -->
+      </div>
+      <!-- container e -->
+
+      <!-- footer s -->
+      <div id="footer">
+        <div class="content">
+          <!-- util menu -->
+          <div class="util_menu">
+            <ul>
+              <li><a href="">이용약관</a></li>
+              <li><a href="">개인정보처리방침</a></li>
+              <li><a href="">써브카드</a></li>
+              <li><a href="">점주관리자</a></li>
+            </ul>
+          </div>
+          <!-- // util menu -->
+          <span class="addr">서울시 땡땡구 떙땡대로 123 떙땡빌딩 n층</span>
+          <span class="rep">대표 : GILDONG HONG(길동홍)</span>
+          <span class="tel">02-123-1234</span>
+          <span class="rep">사업자등록번호 : 123-45-67890</span>
+          <p class="copyright">
+            SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP
+            LLC. All Rights Reserved.
+          </p>
+          <a href="" class="sns_area instagram" target="_blank">instagram</a>
+          <a href="" class="sns_area facebook" target="_blank">facebook</a>
+        </div>
+      </div>
+      <!-- footer e -->
+    </div>
+  </body>
+</html>
