@@ -169,6 +169,15 @@ em {
   background-color: #fff;
   overflow: hidden;
   min-width: 1280px;
+  transition: height 0.3s ease;
+}
+#header.open {
+  height: 425px;
+  overflow: visible;
+}
+#header.open #gnb .dp2 {
+  opacity: 1;
+  top: 0;
 }
 #header::after {
   content: "";
@@ -223,7 +232,6 @@ em {
   display: block;
 }
 #gnb .dp2 {
-  overflow: hidden;
   position: absolute;
   left: 0;
   top: -20px;
@@ -231,6 +239,7 @@ em {
   padding-top: 87px;
   z-index: 2;
   opacity: 0;
+  transition: all 0.3s ease;
 }
 #gnb .dp2 ul li a {
   font-size: 15px;
@@ -238,12 +247,13 @@ em {
   padding: 8px 0 9px;
   display: block;
   letter-spacing: -0.05em;
+  transition: color 0.2s ease;
 }
-#gnb .dp2 ul li a:hover,
-#gnb .dp2 ul li a.active {
+#gnb .dp2 ul li a:hover {
   color: #009223;
   text-decoration: underline;
 }
+
 #gnb > ul > li a.dp1,
 #gnb .dp2 ul li a {
   transition-duration: 0.2s;
@@ -397,7 +407,7 @@ em {
 }
 #footer .content .copyright {
   font-family: font_sw;
-  font: size 13px;
+  font-size: 13px;
   line-height: 25px;
   padding-top: 2px;
   letter-spacing: 0.005em;
@@ -429,9 +439,6 @@ em {
 }
 #footer .content .sns_area.facebook::after {
   background: url(../images/common/icon_sns_facebook.png) 100% 0 no-repeat;
-}
-#footer .content .sns_area.facebook:hover::after {
-  opacity: 1;
 }
 #footer .content .sns_area.instagram {
   right: 105px;
@@ -545,10 +552,10 @@ em {
   color: #999 !important;
 }
 .sub_header.fixed .sub_loc ul li.active a {
-  color: #ffce32 !important;
+  color: #009223 !important;
 }
 .sub_header.fixed .sub_loc ul li.active a::after {
-  background-color: #ffce32 !important;
+  background-color: #009223 !important;
 }
 
 /* sub header type01 */
@@ -769,6 +776,37 @@ address {
   width: 2px;
   height: 16px;
   background-color: #e5e5e5;
+}
+
+/* form ::: selectbox */
+.form_select {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #dddddd;
+  width: 196px;
+}
+.form_select:before {
+  content: "";
+  position: absolute;
+  right: 13px;
+  top: 18px;
+  width: 12px;
+  height: 7px;
+  background: url(../images/common/icon_select_arr.png) 0 0 no-repeat;
+  z-index: 3;
+}
+.form_select select {
+  width: 100%;
+  border: 0;
+  height: 41px;
+  line-height: 41px;
+  font-size: 16px;
+  color: #999999;
+  position: relative;
+  z-index: 1;
+  text-indent: 9px;
 }
 
 /* board list */

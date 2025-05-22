@@ -81,9 +81,6 @@
   bottom: 0;
   margin-left: -585px;
 }
-.main_tap_event_wrapper .bx-controls .bx-controls-direction {
-  display: none;
-}
 .main_tap_event_wrapper .bx-controls .bx-pager {
   position: absolute;
   right: 0;
@@ -547,6 +544,7 @@
   font-weight: 300;
   letter-spacing: -0.03em;
 }
+
 .section_subway_menu .hd .tab ul li.active a {
   color: #009223;
   font-weight: bold;
@@ -558,7 +556,6 @@
 }
 .subway_menu_slider_wrapper .subway_menu_slider {
   height: 320px;
-  overflow: hidden;
   position: relative;
   width: 1200px;
   margin: 0 auto;
@@ -570,8 +567,9 @@
   margin: 0 auto;
   background-color: #fff;
 }
-.subway_menu_slider_wrapper .subway_menu_slider .bx-wrapper .bx-viewport {
-  padding-left: 30px;
+.subway_menu_slider_wrapper .subway_menu_slider .bx-viewport {
+  opacity: 1;
+  padding-left: 25px;
 }
 .subway_menu_slider_wrapper
   .subway_menu_slider
@@ -618,12 +616,22 @@
   .bx-next:hover {
   background-position: 100% 100%;
 }
+
+.subway_menu_slider_wrapper .subway_menu_slider ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  position: relative;
+  width: 1200px;
+}
 .subway_menu_slider_wrapper .subway_menu_slider ul li {
   width: 260px;
   height: 320px;
   padding: 0 5px;
   margin-left: 30px;
-  float: left;
+}
+.subway_menu_slider_wrapper .subway_menu_slider ul li:hover {
+  width: 350px;
 }
 .subway_menu_slider_wrapper .subway_menu_slider ul li:first-child {
   margin-left: 0 !important;
@@ -663,31 +671,28 @@
   width: 98px;
   height: 98px;
   position: absolute;
-  left: 50px;
-  top: 50px;
-  margin: -22px 0 0 42px;
+  left: 50%;
+  top: 50%;
+  margin: -22px 0 0 -42px;
   opacity: 0;
 }
-.subway_menu_slider_wrapper .subway_menu_slider.active ul li:hover .wrap {
+.subway_menu_slider_wrapper .subway_menu_slider ul li:hover .wrap {
   padding: 0;
 }
-.subway_menu_slider_wrapper .subway_menu_slider.active ul li:hover .img {
+.subway_menu_slider_wrapper .subway_menu_slider ul li:hover .img {
   width: 340px;
   height: 238px;
 }
-.subway_menu_slider_wrapper .subway_menu_slider.active ul li:hover strong {
+.subway_menu_slider_wrapper .subway_menu_slider ul li:hover img {
+  object-fit: cover;
+}
+.subway_menu_slider_wrapper .subway_menu_slider ul li:hover strong {
   font-size: 22px;
   margin-top: 10px;
 }
-.subway_menu_slider_wrapper .subway_menu_slider.active ul li:hover p {
+.subway_menu_slider_wrapper .subway_menu_slider ul li:hover p {
   opacity: 0;
 }
-.subway_menu_slider_wrapper .subway_menu_slider.active ul li:hover a::after {
-  opacity: 1;
-}
-.subway_menu_slider_wrapper
-  .subway_menu_slider.active
-  .bx-wrapper
-  .bx-viewport {
+.subway_menu_slider_wrapper .subway_menu_slider ul li:hover a::after {
   opacity: 1;
 }

@@ -37,7 +37,16 @@
       type="text/javascript"
       src="/js/jQuery/jquery.mCustomScrollbar.concat.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="/js/jQuery/jquery-3.7.1.min.js"
+    ></script>
     <script type="text/javascript" src="/js/common.js" defer></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        subwayUtilization();
+      });
+    </script>
   </head>
 
   <body>
@@ -161,7 +170,7 @@
           <div class="utilization_subway_wrapper">
             <div class="tab">
               <ul>
-                <li><a href="">매장에서 주문하기</a></li>
+                <li class="active"><a href="">매장에서 주문하기</a></li>
                 <li><a href="">주문 TIP</a></li>
               </ul>
             </div>
@@ -192,7 +201,7 @@
                         />
                       </div>
                     </li>
-                    <li style="margin-left: -280px">
+                    <li>
                       <div class="img">
                         <img
                           src="./images/utilization/img_store_order02.png"
@@ -213,7 +222,7 @@
                 <div class="info_content">
                   <p class="step_num">STEP 1</p>
                   <ol>
-                    <li class="active" style="margin-top: 0; opacity: 1">
+                    <li class="active">
                       <strong>메뉴 선택</strong>
                       <p class="txt1">
                         메뉴를 고르세요.<br />

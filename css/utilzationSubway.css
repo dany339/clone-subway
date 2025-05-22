@@ -56,7 +56,10 @@
   position: absolute;
   left: 100%;
 }
-
+#store_order .slider_wrapper .img_content ol li.active {
+  left: 50%;
+  margin-left: -585px;
+}
 /* 써브웨이 이용방법 ::: 주문 TIP */
 #order_tip .order_tip_wrapper {
   margin-top: -44px;
@@ -313,6 +316,10 @@
   background-color: #fff;
   margin-top: 50px;
   opacity: 0;
+}
+.utilization_subway_content .slider_wrapper .info_content ol li.active {
+  margin-top: 0;
+  opacity: 1;
 }
 .utilization_subway_content .slider_wrapper .info_content ol li strong {
   color: #292929;
