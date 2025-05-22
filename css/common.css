@@ -633,7 +633,7 @@ em {
   width: 16px;
   height: 16px;
   background: url(../images/utilization/btn_mag.png) 0 0 no-repeat;
-  margin-left: 4px;
+  padding-right: 10px;
 }
 .btn.bgc_bw:hover .i_mag {
   background: url(../images/utilization/btn_mag_hover.png) 0 0 no-repeat;
@@ -887,6 +887,9 @@ address {
   height: 23px;
   line-height: 23px;
   padding: 0 8px;
+}
+.board_list_wrapper table td .service:first-child span {
+  margin-left: 5px;
 }
 .board_list_wrapper table td .service span.on {
   font-weight: 300;

@@ -379,6 +379,7 @@
   span {
   height: 36px;
   line-height: 36px;
+  padding: 0 10px;
 }
 .utilization_subway_content .slider_wrapper .info_content ol li.active {
   z-index: 9;
